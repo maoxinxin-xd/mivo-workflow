@@ -1,0 +1,42 @@
+{
+  "name": "mivo-workflow",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:proxy": "tsx server/index.ts",
+    "server": "tsx server/index.ts",
+    "workflow": "node bin/mivo-workflow.mjs",
+    "service": "tsx server/index.ts"
+  },
+  "dependencies": {
+    "@douyinfe/semi-icons": "^2.80.0",
+    "@douyinfe/semi-ui": "^2.80.0",
+    "@flowgram.ai/form-materials": "1.0.16",
+    "@flowgram.ai/free-auto-layout-plugin": "1.0.16",
+    "@flowgram.ai/free-layout-editor": "1.0.16",
+    "@flowgram.ai/free-node-panel-plugin": "1.0.16",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.7.0",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.4.0"
+  },
+  "bin": {
+    "mivo-workflow": "./bin/mivo-workflow.mjs"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
